@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script th:inline="javascript">
+        // 오류 메세지를 alert()로 출력.
+        alert([[${ message }]]);
+
+        // 사용자가 alert의 'confirm' 버튼을 누르면 다시 로그인 페이지로 이동시킴.
+        window.location.replace("/auth/login");
+    </script>
+</body>
+</html>
